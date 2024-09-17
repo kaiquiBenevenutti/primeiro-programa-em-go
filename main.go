@@ -1,7 +1,9 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 	"strings"
 )
 
@@ -32,12 +34,15 @@ func main() {
 		if resposta2 == "bem" {
 			fmt.Println("Que otimo!")
 			break
-		} else if resposta2 == "mal" {
+		} else if resposta2 == "mau" {
 			fmt.Println("Ah, que pena.")
 			break
 		} else {
-			fmt.Println("Não entendi sua resposta, responda com 'bem' ou 'mal'.")
+			fmt.Println("Não entendi sua resposta, responda com 'bem' ou 'mau'.")
 			fmt.Println(resposta, "como voce esta?")
 		}
 	}
+
+	fmt.Println("Pressione Enter para sair...")
+	bufio.NewReader(os.Stdin).ReadBytes('\n')
 }
