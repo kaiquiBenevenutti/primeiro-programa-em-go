@@ -53,11 +53,11 @@ func main() {
 			if resposta2 == "bem" {
 				fmt.Println("Que otimo!")
 				break
-			} else if resposta2 == "mau" {
+			} else if resposta2 == "mal" {
 				fmt.Println("Ah, que pena.")
 				break
 			} else {
-				fmt.Println("Não entendi sua resposta, responda com 'bem' ou 'mau'.")
+				fmt.Println("Não entendi sua resposta, responda com 'bem' ou 'mal'.")
 				fmt.Println(resposta, "como voce esta?")
 			}
 		}
